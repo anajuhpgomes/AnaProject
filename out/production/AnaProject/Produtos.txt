@@ -1,0 +1,5 @@
+nome;valor
+notebook;4000
+celular;2000
+microondas;400
+geladeira;1800

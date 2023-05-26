@@ -1,0 +1,5 @@
+nome;categoria;comissaoVendedor;comissaoRepresentante
+notebook;eletrônico;30;40
+celular;eletrônico;20;30
+microondas;eletrodoméstico;10;20
+geladeira;eletrodoméstico;20;30

@@ -1,0 +1,3 @@
+zonaDeVenda;regiao;vendedor;id
+São Paulo;sudeste;Carol;555
+Ceará;nordeste;Daniel;666

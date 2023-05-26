@@ -1,0 +1,3 @@
+estado;vendedorZona;idZona
+São Paulo;Ana Julia;333
+Ceará;Alecsander;444

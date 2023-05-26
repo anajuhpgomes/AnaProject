@@ -1,0 +1,3 @@
+cpf;nome;estado
+123;Joao da Silva;São Paulo 
+234;Pedro da Silva;Ceará

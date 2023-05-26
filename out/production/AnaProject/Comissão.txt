@@ -1,0 +1,5 @@
+produto;comissaoVendedor;comissaoRepresentante
+notebook;30;40
+celular;20;30
+microondas;10;20
+geladeira;20;30
