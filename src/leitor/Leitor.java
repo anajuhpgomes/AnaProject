@@ -38,10 +38,12 @@ public class Leitor {
 		}
 		br.close();
 		return linhas;
-	}	
+	}
 
-    public static void main(String[] args) throws Exception {
-		Leitor leitor = new Leitor("./src/Pedido.txt",0,"2");
-		leitor.conteudo();
+
+	public static void main(String[] args) throws Exception {
+		Leitor leitor = new Leitor("./src/Vendedores.txt", 1, "Rio de Janeiro");
+
+		System.out.println(leitor.conteudo());
 	}
 }

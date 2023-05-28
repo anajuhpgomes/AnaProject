@@ -1,6 +1,6 @@
 package comissao;
 
-public class Comissao extends CategoriaDoProduto{
+public class Comissao extends CategoriaDoProduto {
     double comissaoVendedor;
     double comissaoRepresentante;
 
@@ -22,6 +22,8 @@ public class Comissao extends CategoriaDoProduto{
     String nomeCategoria;
 
     public Comissao (String nomeProduto) throws Exception {
+
+        super(nomeProduto);
 
         this.vendedor = new Vendedor("São Paulo");
 

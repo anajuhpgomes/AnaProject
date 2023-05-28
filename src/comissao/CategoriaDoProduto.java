@@ -23,9 +23,6 @@ public class CategoriaDoProduto {
 		
 	}
 
-	public CategoriaDoProduto() {
-	}
-
 	@Override
 	public String toString() {
 		return "Categoria do Produto: " + nomeCategoria;

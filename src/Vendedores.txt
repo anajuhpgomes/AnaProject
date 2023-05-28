@@ -1,5 +1,4 @@
 nome;zonaDeVenda;idVendedor
 Ana Julia;São Paulo;1001
-Alecsander;Ceará;1002
+Alec;Ceará;1002
 Maria Clara;Rio de Janeiro;1003
-
