@@ -12,6 +12,10 @@ public class RegiaoDeVenda {
 		return nomeRegiao;
 	}
 
+	public long getIdRegiao(){
+		return idRegiao;
+	}
+
 	public RegiaoDeVenda(String regiao) throws Exception {
 		Leitor leitor = new Leitor("src/RegioesDeVenda.txt", 0, regiao);
 

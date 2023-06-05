@@ -9,16 +9,26 @@ import leitor.Leitor;
 public class Cliente {
 	private String cpf;
 	private String nome;
+	private String estado;
 	private Pedido[] pedidos;
-	
+
+	public String getNomeCliente(){
+		return nome;
+	}
+
+	public String getUFCliente(){
+		return estado;
+	}
+
+
 	public Cliente(String caminho, int chave, String valorChave) throws Exception {
 		Leitor leitor = new Leitor(caminho, chave, valorChave);
 		ArrayList<String> clientes = leitor.conteudo();
 		String cliente = clientes.get(0);
-		System.out.println(cliente);
 		String[] campos = cliente.split(";");
 		this.cpf = campos[0];
 		this.nome = campos[1];
+		this.estado = campos[2];
 
 		String caminhoPedido = "./src/Pedido.txt";
         int chavePedido = 1;
@@ -42,10 +52,11 @@ public class Cliente {
 		     this.pedidos[indicePedido] = pedido;
 		     indicePedido =+ 1;
 		}
+
 	}
 
 	@Override
 	public String toString() {
-		return "Cliente [cpf=" + cpf + ", nome=" + nome + ", pedidos=" + Arrays.toString(pedidos) + "]";
+		return "Cliente [cpf=" + cpf + ", nome=" + nome + ", UF: " + estado + ", pedidos=" + Arrays.toString(pedidos) + "]";
 	}
 }

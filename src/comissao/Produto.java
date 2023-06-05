@@ -8,8 +8,6 @@ public class Produto {
 	String nomeProduto;
 	double valor;
 	CategoriaDoProduto categoria;
-	double comissaoVendedor;
-	double comissaoRepresentante;
 
 	public String getNomeProduto() {
 		return nomeProduto;
@@ -27,10 +25,8 @@ public class Produto {
 		
 		this.nomeProduto = campos[0];
 		this.valor = Double.parseDouble(campos[1]);
-		this.categoria = new CategoriaDoProduto (nomeProduto);
-		
-		comissaoVendedor = (categoria.comissaoVendedor / 100) * valor;
-		comissaoRepresentante = (categoria.comissaoRepresentante / 100) * valor;
+		this.categoria = new CategoriaDoProduto(valorChave);
+
 		
 	}
 
@@ -50,6 +46,6 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return " Produto [Nome: " + nomeProduto + ", Valor = " + valor + " " + categoria + "] \n Comissão do Vendedor: " + comissaoVendedor + ", Comissão do Representante: " + comissaoRepresentante;
+		return " Produto [Nome: " + nomeProduto + ", Valor = " + valor + " " + categoria;
 	}
 }

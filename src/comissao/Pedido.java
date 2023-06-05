@@ -9,13 +9,30 @@ public class Pedido {
 	private int idPedido;
 	private String cpf;
 	private Data dataPedido;
-	private double valor;
+	private double valorPedido;
+
 
 	public Pedido(int idPedido, String cpf, Data dataPedido, double valor) {
 		this.idPedido = idPedido;
 		this.cpf = cpf;
 		this.dataPedido = dataPedido;
-		this.valor = valor;
+		this.valorPedido = valor;
+	}
+
+	public int getIdPedido(){
+		return idPedido;
+	}
+
+	public String getCpf(){
+		return cpf;
+	}
+
+	public Data getDataPedido(){
+		return dataPedido;
+	}
+
+	public double getValorPedido(){
+		return  valorPedido;
 	}
 
 	public Pedido(String caminho, int chave, String valorChave) throws Exception {
@@ -30,14 +47,14 @@ public class Pedido {
         int mes = Integer.parseInt(campoData[1]);
         int ano = Integer.parseInt(campoData[2]);
         this.dataPedido = new Data(dia,mes,ano);
-        this.valor = Double.parseDouble(campos[3]);
+        this.valorPedido = Double.parseDouble(campos[3]);
 	}
 
 	
 	@Override
 	public String toString() {
 		return "Pedido [idPedido=" + idPedido + ", cpf=" + cpf + ", dataPedido=" + dataPedido + ", valor="
-				+ valor + "]";
+				+ valorPedido + "]";
 	}
 
 
